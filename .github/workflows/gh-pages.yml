@@ -20,7 +20,7 @@ jobs:
       - name: Setup build deps
         run: |
           apt-get update
-          apt-get install -y git cmake pip graphviz plantuml wget
+          apt-get install -y git cmake pip graphviz doxygen plantuml wget
           wget https://sourceforge.net/projects/plantuml/files/plantuml.jar
           mv plantuml.jar /usr/share/plantuml/
           python3 -m pip install -r doc/requirements.txt --upgrade

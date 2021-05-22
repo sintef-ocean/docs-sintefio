@@ -1,9 +1,8 @@
-    :Author: Joakim Haugen
 
-.. contents::
 
-1 Introduction
---------------
+
+Introduction
+------------
 
 Source code for documentation dashboard website `https://docs.sintef.io <https://docs.sintef.io>`_.
 

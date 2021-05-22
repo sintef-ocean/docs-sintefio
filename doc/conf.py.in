@@ -113,6 +113,8 @@ math_eqref_format = 'Eq. ({number})'
 #
 html_theme = 'sphinx_rtd_theme'
 
+html_title = 'Code documentation'
+
 html_theme_options = {
     'logo_only': True,
     'display_version': False,

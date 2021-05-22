@@ -5,7 +5,7 @@
 
 
 
-Last changed: 2021-05-22 19:01
+Last changed: 2021-05-22 20:30
 
 **SINTEF organization website**: `https://www.sintef.no <https://www.sintef.no>`_. |br|
 **SINTEF Ocean official website**: `https://www.sintef.no/ocean <https://www.sintef.no/ocean>`_.
@@ -23,7 +23,7 @@ Software libraries
     FhSim is a software platform and framework for mathematical modelling and
     numerical simulation, with a focus on marine applications.
 
-RatatokIDL
+`RatatoskIDL <https://sintef-ocean.github.io/ratatoskidl>`_
     Project with Interface Definition Language (IDL) files as import
     targets. It provides source files so that communication APIs between applications using data
     distribution service standard `OMG DDS <https://www.omg.org/spec/DDS/About-DDS/>`_ can be generated. The IDL files are used by ``ratatosk``

@@ -1,19 +1,23 @@
 
-Last changed: 2021-05-22 17:51
+.. |br| raw:: html
+
+  <br />
+
+
+
+Last changed: 2021-05-22 19:01
+
+**SINTEF organization website**: `https://www.sintef.no <https://www.sintef.no>`_. |br|
+**SINTEF Ocean official website**: `https://www.sintef.no/ocean <https://www.sintef.no/ocean>`_.
 
 SINTEF Ocean
 ------------
 
-This site contains links to software projects at `SINTEF Ocean <https://sintef.no/ocean>`_. Note that the list is
-non-exhaustive.
+This site contains links to a few software projects and public repositories maintained
+by SINTEF Ocean.
 
 Software libraries
 ~~~~~~~~~~~~~~~~~~
-
-`conan recipes <https://sintef-ocean.github.io/status-conan-recipes/>`_
-    We make use of conan to build many of our projects. This site
-    contains an overview of the continuous integration build status of public recipes
-    maintained by us.
 
 `FhSim <https://fhsim.no/>`_
     FhSim is a software platform and framework for mathematical modelling and
@@ -26,11 +30,16 @@ RatatokIDL
     and other softwares in our portfolio. This project is used by other softwares, such as
     ``sinspekto``, ``mimir``, and ``balder``.
 
+`conan recipes <https://sintef-ocean.github.io/status-conan-recipes/>`_
+    We make use of conan to build many of our projects. This site
+    contains an overview of the continuous integration build status of public recipes
+    maintained by us.
+
 Sinspekto
     To appear
 
-R&D Projects
-~~~~~~~~~~~~
+Research and development projects
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Add short description of fangstkontroll and links to project pages, results and more.
 Point to softwares.

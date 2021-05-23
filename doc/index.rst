@@ -42,9 +42,6 @@ Software
 R&D projects
 ~~~~~~~~~~~~
 
-Add short description of fangstkontroll and links to project pages, results and more.
-Point to softwares.
-
 FHF: Catch control in Purse Seine
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

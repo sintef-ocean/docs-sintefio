@@ -92,8 +92,11 @@
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">SINTEF Ocean</a><ul>
-<li><a class="reference internal" href="#software-libraries">Software libraries</a></li>
-<li><a class="reference internal" href="#research-and-development-projects">Research and development projects</a></li>
+<li><a class="reference internal" href="#software">Software</a></li>
+<li><a class="reference internal" href="#r-d-projects">R&amp;D projects</a><ul>
+<li><a class="reference internal" href="#fhf-catch-control-in-purse-seine">FHF: Catch control in Purse Seine</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -161,15 +164,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p>Last changed: 2021-05-23 10:19</p>
-<p><strong>SINTEF organization website</strong>: <a class="reference external" href="https://www.sintef.no">https://www.sintef.no</a>. <br />
+  <p>Last changed: 2021-05-23 18:32 <br />
+<strong>SINTEF organization website</strong>: <a class="reference external" href="https://www.sintef.no">https://www.sintef.no</a>. <br />
 <strong>SINTEF Ocean official website</strong>: <a class="reference external" href="https://www.sintef.no/ocean">https://www.sintef.no/ocean</a>.</p>
 <section id="sintef-ocean">
 <h1>SINTEF Ocean<a class="headerlink" href="#sintef-ocean" title="Permalink to this headline">¶</a></h1>
-<p>This site contains links to a few software projects and public repositories maintained
-by SINTEF Ocean.</p>
-<section id="software-libraries">
-<h2>Software libraries<a class="headerlink" href="#software-libraries" title="Permalink to this headline">¶</a></h2>
+<p>This site contains links to a few software projects and repositories maintained by
+SINTEF Ocean.</p>
+<section id="software">
+<h2>Software<a class="headerlink" href="#software" title="Permalink to this headline">¶</a></h2>
 <dl class="simple">
 <dt><a class="reference external" href="https://fhsim.no/">FhSim</a></dt><dd><p>FhSim is a software platform and framework for mathematical modelling and
 numerical simulation, with a focus on marine applications.</p>
@@ -177,27 +180,50 @@ numerical simulation, with a focus on marine applications.</p>
 <dt><a class="reference external" href="https://sintef-ocean.github.io/ratatoskidl">RatatoskIDL</a></dt><dd><p>Project with Interface Definition Language (IDL) files as import
 targets. It provides source files so that communication APIs between applications using data
 distribution service standard <a class="reference external" href="https://www.omg.org/spec/DDS/About-DDS/">OMG DDS</a> can be generated. The IDL files are used by <code class="docutils literal notranslate"><span class="pre">ratatosk</span></code>
-and other softwares in our portfolio. This project is used by other softwares, such as
-<code class="docutils literal notranslate"><span class="pre">sinspekto</span></code>, <code class="docutils literal notranslate"><span class="pre">mimir</span></code>, and <code class="docutils literal notranslate"><span class="pre">balder</span></code>.</p>
+and other softwares in our portfolio.</p>
+</dd>
+<dt><a class="reference external" href="https://sintef-ocean.github.io/sinspekto">Sinspekto</a></dt><dd><p><em>Sinspekto</em> is a module that provides Qt modeling language (<a class="reference external" href="https://doc.qt.io/qt-5/qtqml-index.html">QML</a>)
+components for interacting with applications that use the data distribution service
+standard <a class="reference external" href="https://www.omg.org/spec/DDS/About-DDS/">OMG DDS</a> as communication middleware. Sinspekto consists of classes that
+define various <a class="reference external" href="https://doc.qt.io/qt-5/qtqml-syntax-objectattributes.html">QML Object Attributes</a>, which are translated to / from DDS topics. This
+means that by using sinspekto QML elements in your application, it is possible to
+interact with other systems using DDS.</p>
 </dd>
 <dt><a class="reference external" href="https://sintef-ocean.github.io/status-conan-recipes/">conan recipes</a></dt><dd><p>We make use of conan to build many of our projects. This site
 contains an overview of the continuous integration build status of public recipes
 maintained by us.</p>
 </dd>
-<dt>Sinspekto</dt><dd><p>To appear</p>
+</dl>
+</section>
+<section id="r-d-projects">
+<h2>R&amp;D projects<a class="headerlink" href="#r-d-projects" title="Permalink to this headline">¶</a></h2>
+<p>Add short description of fangstkontroll and links to project pages, results and more.
+Point to softwares.</p>
+<section id="fhf-catch-control-in-purse-seine">
+<h3>FHF: Catch control in Purse Seine<a class="headerlink" href="#fhf-catch-control-in-purse-seine" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="_images/fkin.png"><img alt="_images/fkin.png" class="align-left" src="_images/fkin.png" style="width: 180px;" /></a>
+<p>“Fangstkontroll i notfiske etter pelagiske arter: Fase 2” is a project funded by FHF –
+Norwegian Seafood Research Fund, Grant No. 901350. See the FHF’s <a class="reference external" href="https://www.fhf.no/prosjekter/prosjektbasen/901350/">project page</a> for
+updated news.</p>
+<p>As part of this project, several software programs and libraries have been
+developed. In addition to improvements to <code class="docutils literal notranslate"><span class="pre">RatatoskIDL</span></code> and <code class="docutils literal notranslate"><span class="pre">Sinspekto</span></code> mentioned
+above, we have developed two programs, namely <code class="docutils literal notranslate"><span class="pre">Balder</span></code> and <code class="docutils literal notranslate"><span class="pre">Mimir</span></code>.</p>
+<dl class="simple">
+<dt><a class="reference external" href="https://sintef-ocean.github.io/balder">Balder</a></dt><dd><p><em>Balder</em> is a graphical user application that provides decision support for
+the captain in purse seining before gear deployment. Balder makes use of real-time
+data and model predictive control algorithms to predict a deployment trajectory for
+the purse seine. The deployment trajectory is devised by taking into account expected
+sink depth/speed of the gear and use a prescribed trajectory of the fish school</p>
+</dd>
+<dt><a class="reference external" href="https://sintef-ocean.github.io/mimir">Mimir</a></dt><dd><p><em>Mimir</em> serves as a simple reference implementation to achieve an
+optimization-based decision support for deployment planning. The program typically
+runs to provide algorithm outputs to another application, for instance a graphical
+application that visualizes the results. The algorithms are specifically set up to
+use the <a class="reference external" href="https://web.casadi.org">CasADi</a> framework and its interfaces to various algorithm libraries, including
+optimization problem solvers and numerical integrators.</p>
 </dd>
 </dl>
 </section>
-<section id="research-and-development-projects">
-<h2>Research and development projects<a class="headerlink" href="#research-and-development-projects" title="Permalink to this headline">¶</a></h2>
-<p>Add short description of fangstkontroll and links to project pages, results and more.
-Point to softwares.</p>
-<dl class="simple">
-<dt>Mimir</dt><dd><p>To appear</p>
-</dd>
-<dt>Balder</dt><dd><p>To appear</p>
-</dd>
-</dl>
 </section>
 </section>
 

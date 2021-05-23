@@ -5,7 +5,6 @@
 macro(sfh_check_doc_tools)
 
    find_package(Doxygen)
-   find_package(Python3 QUIET COMPONENTS Interpreter) # is volatile
    find_program(SPHINX_EXECUTABLE NAMES sphinx-build DOC "Path to sphinx-build executable")
 
    set(_doc_requirements
@@ -16,11 +15,18 @@ macro(sfh_check_doc_tools)
       message( FATAL_ERROR "Doxygen not found. ${_doc_requirements}")
    endif()
 
-   if(NOT Python3_FOUND)
-      find_program(Python3_EXECUTABLE NAMES python3 DOC "Path to python executable")
-      if(Python3_EXECUTABLE)
-         set(Python3_FOUND 1)# PARENT_SCOPE)
-      endif()
+   find_program(Python3_EXECUTABLE NAMES python python3 DOC "Path to python executable")
+   if(Python3_EXECUTABLE)
+       execute_process(
+         COMMAND ${Python3_EXECUTABLE} --version
+         OUTPUT_VARIABLE _PYTHON_VERSION
+         ERROR_QUIET)
+       string(REGEX MATCH "Python 3\..*" _PYTHON_REG ${_PYTHON_VERSION})
+       if(NOT _PYTHON_REG)
+           message(FATAL_ERROR "Wrong python version: ${_PYTHON_VERSION}")
+       else()
+           set(Python3_FOUND 1)# PARENT_SCOPE)
+       endif()
    endif()
 
    if(Python3_FOUND)

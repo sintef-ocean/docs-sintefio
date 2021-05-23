@@ -6,5 +6,6 @@ project("docs-sintefio"
   DESCRIPTION "Documentation web frontpage"
   LANGUAGES NONE
 )
+set(DOCS_PROJECT_NAME "docs.sintef.io")
 
 add_subdirectory(doc)

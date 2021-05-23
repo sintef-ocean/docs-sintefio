@@ -5,7 +5,7 @@
 
 
 
-Last changed: 2021-05-22 20:30
+Last changed: |today|
 
 **SINTEF organization website**: `https://www.sintef.no <https://www.sintef.no>`_. |br|
 **SINTEF Ocean official website**: `https://www.sintef.no/ocean <https://www.sintef.no/ocean>`_.

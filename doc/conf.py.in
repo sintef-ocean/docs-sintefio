@@ -28,7 +28,7 @@ import textwrap
 
 # -- Project information -----------------------------------------------------
 
-project = '@PROJECT_NAME@'
+project = '@DOCS_PROJECT_NAME@'
 copyright = "@THE_YEAR@" + ', @SPHINX_PROJECT_VENDOR@'
 author = '@SPHINX_PROJECT_AUTHOR@'
 
@@ -170,6 +170,6 @@ highlight_language = 'cpp'
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
-    'sturdy-doc': ('https://joakimono.github.io/sturdy-doc/', None),
+    'ratatoskidl': ('https://sintef-ocean.github.io/ratatoskidl/', None),
     # add projects here
 }
